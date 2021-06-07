@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "open-sans";
+  src: url("../fonts/OpenSans-Regular.woff") format("woof");
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-extrabold";
+  src: url("../fonts/OpenSans-ExtraBold.woff") format("woof");
+  src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+html,
+body {
+  background-color: #523365;
+  color: white;
+  font-family: open-sans, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bear {
+  height: 30vw;
+  left: 35vw;
+  position: absolute;
+  right: 35vw;
+  top: 10vh;
+  width: 30vw;
+}
+
+.bear img {
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 2vh;
+}
+
+.nav__list li {
+  display: inline;
+  border-bottom: 0.15rem solid white;
+  transition: border-color 0.5s;
+}
+
+.nav__list li:hover {
+  border-color: #ac90bd;
+}
+.main h1 {
+  font-family: open-sans-extrabold;
+  transition: color 0.5s;
+}
+
+.main h1:hover {
+  color: #ac90bd;
+}
