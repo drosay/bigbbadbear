@@ -97,7 +97,11 @@ HEADER END */
 /* ABOUT */
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
+  padding: 3vh 0 0 0;
   text-align: justify;
   width: 90vw;
 }
@@ -108,7 +112,6 @@ HEADER END */
 
 .about h2 {
   font-size: 15vmin;
-  text-align: center;
 }
 
 .about p {
