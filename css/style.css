@@ -34,33 +34,41 @@ body {
   text-align: center;
 }
 
-/* HEADER */
 .head {
   display: none;
+}
+
+/* HEADER 
+.head {
+  position: absolute;
 }
 .nav__list {
   display: flex;
   justify-content: space-around;
   list-style: none;
   padding: 2vh;
+  width: 100vh;
 }
 
 .nav__list li {
   display: inline;
   font-size: 1.1em;
-  /*border-bottom: 0.15rem solid white;*/
+  border-bottom: 0.15rem solid white;
   transition: border-color 0.5s;
 }
 
 .nav__list li:hover {
   border-color: #ac90bd;
 }
-/* HEADER END */
+HEADER END */
 
+.main,
+.about {
+  height: 100vh;
+}
 /* MAIN */
 .bear {
   width: 25vmin;
-  margin: 0 auto;
 }
 
 .bear img {
@@ -68,28 +76,54 @@ body {
 }
 
 .main {
-  height: 100vh;
-  position: absolute;
-  text-align: center;
-  width: 100vw;
-}
-.main * {
-  display: block;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100vw;
 }
 
 .main h1 {
   font-family: open-sans-extrabold;
   font-size: 13vw;
-  opacity: 0.75;
-  transition: opacity 1s ease-in-out;
-}
-
-.main h1:hover {
-  opacity: 1;
 }
 
 .main p {
-  margin-top: 2vw;
   font-size: 5vw;
+  margin-top: 2vw;
 }
 /* MAIN END */
+
+/* ABOUT */
+
+.about {
+  margin: 0 auto;
+  text-align: justify;
+  width: 90vw;
+}
+
+.about * {
+  margin-bottom: 0.4rem;
+}
+
+.about h2 {
+  font-size: 15vmin;
+  text-align: center;
+}
+
+.about p {
+  font-size: 6vmin;
+}
+
+.myself * {
+  display: inline;
+  margin: 0;
+}
+
+.myself img {
+  float: left;
+  margin: 0 2vw 0 0;
+  width: 25vmin;
+}
+
+/* ABOUT END */
