@@ -32,9 +32,16 @@ body {
   font-family: open-sans, sans-serif;
   font-size: 16px;
   text-align: center;
+  transition: ease-in-out 0.4s;
 }
-
-/* HEADER 
+/* HEADER */
+.darkmode {
+  background-color: transparent;
+  font-size: 2.2rem;
+  position: absolute;
+  left: 2vw;
+  top: 1vh;
+}
 .head {
   position: absolute;
 }
@@ -42,8 +49,10 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin-left: 10vw;
   padding: 2vh;
-  width: 100vh;
+  width: 90vw;
+  max-width: 90vw;
 }
 
 .nav__list li {
@@ -56,7 +65,7 @@ body {
 .nav__list li:hover {
   border-color: #ac90bd;
 }
-HEADER END */
+/* HEADER END */
 
 /* MAIN */
 .bear {
